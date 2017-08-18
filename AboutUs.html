@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.header {
+    background-color:#1676BC;
+    color:white;
+    padding: 2px 0 12px 0 ;
+}
+.header img {
+	margin-top:-2px;
+	margin-right:3em;
+	float:left;
+	width: 15%;
+	height: 12%;
+}
+
+.header h2 {
+	clear:both;
+	margin-top: 3px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.smalltitle {
+	font-size: 150%;
+	color:#0C22CD;
+}
+.footer {
+    background-color: #1676BC;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+</style>
+<link href="rental.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_item_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+	
+</script>
+
+<div class="nav">
+			<a href="index.html" id="0" onClick="nav_item_selected(0)">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn" id="1">Rent</button>
+				<div class="dropdown-content">
+					<a href="aunit.html" onClick="nav_item_selected(1)">Apartment and Unit</a>
+					<a href="house.html" onClick="nav_item_selected(1)">House</a>	
+					<a href="townhouse.html" onClick="nav_item_selected(1)">Townhouse</a>	
+					<a href="villa.html" onClick="nav_item_selected(1)">Villa</a>	
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn" id="2">Homestay</button>
+				<div class="dropdown-content">
+					<a href="homeparents.html" onClick="nav_item_selected(2)">Home Parents</a>
+					<a href="looking.html" onClick="nav_item_selected(2)">Looking a family</a>	
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn" id="3">Communication Bar</button>
+				<div class="dropdown-content">
+					<a href="blackboard.html" onClick="nav_item_selected(3)">Blackboard</a>
+					<a href="Q&A.html" onClick="nav_item_selected(3)">Q and A</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn" id="4">Support</button>
+				<div class="dropdown-content">
+					<a href="notice.html" onClick="nav_item_selected(4)">Notice for Rent</a>	
+					<a href="legalagent.html" onClick="nav_item_selected(4)">Legal Agent</a>
+					<a href="agreement.html" onClick="nav_item_selected(4)">Agreement Model</a>
+					<a href="secondhand.html" onClick="nav_item_selected(4)">Second Hand Requirement</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn" id="5">About Us</button>
+				<div class="dropdown-content">
+					<a href="contact_us.html" onClick="nav_item_selected(5)">Contact Us</a>	
+					<a href="achievement.html" onClick="nav_item_selected(5)">Achievements</a>
+					<a href="link.html" onClick="nav_item_selected(5)">Link</a>
+					<a href="partners.html" onClick="nav_item_selected(5)">Partners</a>
+				</div>
+			</div>
+		</div>
+</head>
+<body>
+
+<div class="header">
+<img src="LOGO for team 2.png" alt="logo">
+  <h1 style="font-size:250%" id="top">Rental House</h1>
+</div>
+
+    <h2 style="font-size: 190%"><b>ABOUT US</b></h2>
+
+<div class="row">
+
+<div class="col-3 col-s-12 menu">
+  <ul>
+  	<li style="padding-left:7%">• Rent</li>
+    <li><a href="#">• Homestay</a></li>
+    <li><a href="#">• Communication Bar</a></li>
+    <li><a href="notice.html">• Support</a></li>
+    <li><a href="#">• About Us</a></li>
+    	<ul>
+        	<li><a href="apartment.html" style="padding-left:15%">Contact Us</a></li>
+            <li><a href="house.html" style="padding-left:15%">Achievements</a></li>
+            <li><a href="townhouse.html" style="padding-left:15%">Link</a></li>
+            <li><a href="villa.html" style="padding-left:15%">Partners</a></li>
+        </ul>
+  </ul>
+</div>
+
+<div class="col-9">
+  <h1>Contact Us</h1>
+  <p><b class="smalltitle" id="increase">Head Office</b>
+<br>
+<br>We are located in the heart of Brisbane CBD, on the top floor of James Cook University 
+<br>Address: 
+Level 11, 349 Queen Street Brisbane QLD 4000 AUSTRALIA
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.086094403293!2d153.02718551557473!3d-27.46657892314723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1d064dcb2f%3A0x7f3aed61f0bfd9e3!2sJames+Cook+University%2C+Brisbane+Campus!5e0!3m2!1sen!2sau!4v1501473138677" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <p style="float:right;"><a href="#top"> -TOP- </a></p>
+    </p>
+
+</div>
+</div>
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
