@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+.pic{
+	width:40%;
+	height:50%;
+	
+	
+	}
+
+
+
+.picbig
+
+{position: absolute;
+width: 0%;
+-webkit-transition:width 0.3s linear 0s;
+z-index:10;
+
+	}
+.pic:hover +.picbig{
+	
+	width:45%;
+}
+
+
+
