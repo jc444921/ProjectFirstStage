@@ -18,8 +18,8 @@ include_once('include/config.php');
 <body>
 
 <div class="header">
-<img src="LOGO for team 2.png" alt="logo">
-  <h1 style="font-size:250%">Rental House</h1>
+<img src="Images/LOGO for team 2.png" alt="logo">
+  <h1 style="font-size:250%" id="top">Rental House</h1>
 </div>
 
     <h2 style="font-size: 190%">Welcome to see some<strong>Agreement Models</strong>.</h2>
@@ -50,7 +50,7 @@ include_once('include/config.php');
 
 <div class="col-9">
   <h1>Form for Rental House</h1>
-  <p><img src="rental form1.gif" alt="rentalform">there need find a document</p>
+  <p><img src="Images/rental form1.gif" alt="rentalform">there need find a document</p>
   <p style="float:right;"><a href="#top"> -TOP- </a></p>
 </div>
 

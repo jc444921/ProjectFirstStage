@@ -18,8 +18,8 @@ include_once('include/config.php');
 <body>
 
 <div class="header">
-    <img src="LOGO for team 2.png" alt="logo">
-    <h1 style="font-size:250%">Rental House</h1>
+    <img src="Images/LOGO for team 2.png" alt="logo">
+  <h1 style="font-size:250%" id="top">Rental House</h1>
 </div>
 
     <h2 style="font-size: 190%">Welcome to <strong>Second Hand Requirement</strong>.</h2>
@@ -28,9 +28,9 @@ include_once('include/config.php');
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li><a href="apartment.html">• Go to Rent</a></li>
-    <li><a href="Homestay.html">• Homestay</a></li>
-    <li><a href="CommunicationBar.html">• Communication Bar</a></li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
     <li>• Support</li>
         <ul>
             <li><a href="notice.php" style="padding-left:7%">Notice for Rental</a></li>
@@ -38,7 +38,7 @@ include_once('include/config.php');
             <li><a href="agreement.php" style="padding-left:7%">Agreement Form Models</a></li>
             <li><a href="secondhand.php" style="padding-left:7%">Second Hand Requirements</li>
         </ul>
-    <li><a href="AboutUs.html">• About Us</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
 

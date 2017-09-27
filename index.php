@@ -4,26 +4,27 @@ include_once('include/config.php');
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rental House</title>
+	<title>Rental House</title>
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
+
 
 
 </head>
 
 <body>
 <div class="header">
-	<img src="LOGO for team 2.png" alt="logo">
-    <h1>Rental House</h1>
+	<img src="Images/LOGO for team 2.png" alt="logo">
+  <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?>
 </div>
 
-<h2 style="font-size: 190%" style="clear:both;">Welcome to <strong>Rental House</strong>!</h2>
+<h2 style="font-size: 190%">Welcome to <strong>Rental House</strong>!</h2>
 
 <div class="row">
 
@@ -40,10 +41,10 @@ include_once('include/config.php');
 <div class="col-6 col-s-9">
   <h1 class="smalltitle" id="rent">Rent</h1>
   <p>
-  	<img src="Information about properties/apartment&unit/3/image7.jpg" alt="apartment1" style="float:left; width:33%; height:20%"> 
+  	<img src="" alt="apartment1" style="float:left; width:33%; height:20%"> 
   	<img src="Information about properties/apartment&unit/2/1.jpg" alt="apartment2" style="float:left; width:33%; height:20%">
     <img src="Information about properties/house/1/main.jpg" alt="house1" style="float:left; width:33%; height:20%">
-    <h2><a href="apartment.html">More detials</a></h2>
+    <h2><a href="apartment.php">More detials</a></h2>
   </p>
   
   <h1 class="smalltitle" id="homestay">Homestay</h1>

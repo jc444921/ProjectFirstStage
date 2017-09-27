@@ -11,7 +11,7 @@
 <body>
 
 <div class="header">
-<img src="LOGO for team 2.png" alt="logo">
+<img src="Images/LOGO for team 2.png" alt="logo">
   <h1 style="font-size:250%" id="top">Rental House</h1>
 </div>
 
@@ -21,9 +21,9 @@
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li><a href="apartment.html">• Go to Rent</a></li>
-    <li><a href="Homestay.html">• Homestay</a></li>
-    <li><a href="CommunicationBar.html">• Communication Bar</a></li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
     <li>• Support</li>
     <ul>
         <li style="padding-left:7%">Notices for you:</li>
@@ -37,7 +37,7 @@
         <li><a href="agreement.html" style="padding-left:7%">Agreement Form Models</a></li>
         <li><a href="secondhand.html" style="padding-left:7%">Second Hand Requirements</a></li>
     </ul>
-    <li><a href="AboutUs.html">• About Us</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
 
@@ -48,7 +48,7 @@
 <br>While you're on a fixed-term tenancy agreement (provided it's less than two years), your rent generally can't be increased unless it's been written into your tenancy agreement.
 <span style="display:none;" id="expand-text">
 <br><br>But once that's finished, unless you choose to sign another fixed-term agreement, you'll move onto a periodic agreement or rolling lease. On these types of agreements the rent can be increased. However, normally your rent can only be increased once every six to 12 months (depending on your state or territory). This clause is notably absent in New South Wales, where there's no limit to how often your rent can be increased. You're also entitled to a notice period of around 60 days (except in the NT where it's only 30 days).
-<br><img src="rental increase.gif" alt="increase"></span><a id="expand-click" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click','expand-text', 'inline')">Read more</a>
+<br><img src="Images/rental increase.gif" alt="increase"></span><a id="expand-click" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click','expand-text', 'inline')">Read more</a>
 </p>
     <p><b class="smalltitle" id="repairs">Rights to repairs</b>
     <br><br>There's generally a difference between urgent or emergency repairs and those which are deemed to be non-urgent. Urgent repairs are generally specified as those which pose a danger or which are likely to cause undue inconvenience, such as a dangerous electrical fault or a blocked or broken toilet.

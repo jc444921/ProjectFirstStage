@@ -17,8 +17,8 @@ include_once('include/config.php');
 <body>
 
 <div class="header">
-    <img src="LOGO for team 2.png" alt="logo">
-    <h1 style="font-size:250%">Rental House</h1>
+    <img src="Images/LOGO for team 2.png" alt="logo">
+  <h1 style="font-size:250%" id="top">Rental House</h1>
 </div>
 
     <h2 style="font-size: 190%">Welcome to <strong>Legal Agent</strong>.</h2>
