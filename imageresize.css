@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+.smallpic{
+	width:22%;
+	height:25%;
+	
+	
+	}
+
+
+
+.smallpiclarge
+
+{position: absolute;
+width: 0%;
+-webkit-transition:width 0.3s linear 0s;
+z-index:10;
+
+	}
+.smallpic:hover +.smallpiclarge{
+	
+	width:24%;
+}
+
+
+
