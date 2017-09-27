@@ -53,13 +53,13 @@ video {
 	background-color:#1676BC;
 	width: 65%;
 	height: 3em;
-	float: right;
 	margin-top:3.3%;
 }
 .nav a {
 	float: left;
     font-size: 16px;
     color: white;
+	background-color:#1676BC;
     text-align: center;
     padding: 14px 40px;
     text-decoration: none;
