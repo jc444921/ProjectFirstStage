@@ -10,8 +10,8 @@ html {
 	margin-top:-2px;
 	margin-right:3em;
 	float:left;
-	width: 15%;
-	height: 12%;
+	width: 300px;
+	height: 200px;
 }
 .header h2 {
 	clear:both;
@@ -46,7 +46,4 @@ html {
     text-align: center;
     font-size: 12px;
     padding: 15px;
-}
-.secondtitle {
-	padding-left:5%;
 }

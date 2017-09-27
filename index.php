@@ -12,22 +12,18 @@ include_once('include/config.php');
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-
+<?php include("include/nav.inc")?>
 
 
 </head>
 
 <body>
-
 <div class="header">
-  <?php include("include/nav.inc")?>
-<img src="LOGO for team 2.png" alt="logo" style="width:300px; height:200px;">
-
-  <h1 style="font-size:250%">Rental House</h1>
-
+	<img src="LOGO for team 2.png" alt="logo">
+    <h1>Rental House</h1>
 </div>
 
-<h2 style="font-size: 190%">Welcome to <strong>Rental House</strong>!</h2>
+<h2 style="font-size: 190%" style="clear:both;">Welcome to <strong>Rental House</strong>!</h2>
 
 <div class="row">
 
@@ -75,7 +71,7 @@ include_once('include/config.php');
   <br>
   <br>The tenancy agreement for real estate is often called a lease, and usually involves specific property rights in real property, as opposed to chattels.
   <br>
-  <br style="float:right; size:90%;">There are some simple <a href="agreement.html">Rental Agreement Forms</a> for consideration.
+  <br style="float:right; size:90%;">There are some simple <a href="agreement.php">Rental Agreement Forms</a> for consideration.
   </p>
   
   <h1 class="smalltitle" id="aboutus">About Us</h1>
