@@ -31,7 +31,6 @@
             <li><a href="#increase" style="padding-left:15%">Rental increase</a></li>
             <li><a href="#repairs" style="padding-left:15%">Rights to repairs</a></li>
             <li><a href="#bonds" style="padding-left:15%">Getting your bond back</a></li>
-            <li style="padding-left:15%">More info please check <a href="https://www.choice.com.au/money/property/renting/articles/rental-rights-you-didnt-know-you-had"><b>www.choice.com.au</b></a></li>
         </ul>
         <li><a href="legalagent.php" style="padding-left:7%">Legal Agent Support</a></li>
         <li><a href="agreement.html" style="padding-left:7%">Agreement Form Models</a></li>
@@ -43,6 +42,10 @@
 
 <div class="col-9">
   <h1>There are some notices for your consideration.</h1>
+  <p><b class="smalltitle" >Basic detail</b>
+  <br>When renting real estate, the person(s) or party who lives in or occupies the real estate is often called a tenant, paying rent to the owner of the property, often called a landlord (or landlady). The real estate rented may be all or part of almost any real estate, such as an apartment, house, building, business office(s) or suite, land, farm, or merely an inside or outside space to park a vehicle, or store things all under Real estate law.
+  <br>
+  <br>The tenancy agreement for real estate is often called a lease, and usually involves specific property rights in real property, as opposed to chattels.
   <p><b class="smalltitle" id="increase">Rental increases -  how much and how often?</b>
 <br>
 <br>While you're on a fixed-term tenancy agreement (provided it's less than two years), your rent generally can't be increased unless it's been written into your tenancy agreement.
@@ -66,7 +69,7 @@
     <br>Excessive mould as a result of structural issues or broken elements on a stove top are common and non-urgent issues where tenants should be entitled to repairs, according to the Tenants' Union of Victoria.
     <br>
     <br>It seems tenants are often too scared to ask for repairs for fear of being kicked out. A survey by the Tenants' Union of NSW in 2014 found 77% of respondents had put up with a problem because they were worried about adverse consequences if they asked to get it fixed.
-    </span><a id="expand-click2" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click2','expand-text2','inline')"><br>Read me</a></p>
+    </span><a id="expand-click2" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click2','expand-text2','inline')"><br>Read more</a></p>
     <p><b class="smalltitle" id="bonds">Getting your bond back</b>
 <br>
 <br>When you pay your bond, in most states and territories you're required to lodge it with the relevant bond authority so that if there's a dispute at the end of your lease, the money is held with a third party. This also means you can apply for your bond back independently if the landlord doesn't sign off on the bond in a timely fashion, or if you disagree.<span style="display:none;" id="expand-text3">
@@ -74,8 +77,8 @@
 <br>"The idea that your landlord won't give your bond back is a bit of a furphy," says Ned Cutcher, senior policy officer at the Tenants' Union of NSW. As soon as your tenancy is over in New South Wales, you have the right to unilaterally apply to the NSW Civil and Administrative Tribunal (NCAT) to get your bond back – that is, "you don't need to wait for your landlord to sign off", Cutcher says. The landlord must then make a case to the bond board in a timely fashion if there's anything they want to complain about.
 <br>
 <br>It's a similar story in Victoria. As a tenant you can apply directly to the Victorian Civil and Administrative Tribunal (VCAT) if you can't reach an agreement with the landlord on your application to the bond board. If the landlord intends to make a claim on the bond, they must do so within 10 days of the tenancy agreement finishing.
-    </span><a id="expand-click3" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click3','expand-text3','inline')">Read me</a></p>
-    <p><a href="https://www.choice.com.au/money/property/renting/articles/rental-rights-you-didnt-know-you-had">More info please check this website <b>www.choice.com</b></a></p>
+    </span><br><a id="expand-click3" href="javascript:;" style="text-decoration:none;" onClick="show_text('expand-click3','expand-text3','inline')">Read more</a></p>
+    <br><p><a href="https://www.choice.com.au/money/property/renting/articles/rental-rights-you-didnt-know-you-had">More info please check this website <b>www.choice.com</b></a></p>
     <p style="float:right;"><a href="#top"> -TOP- </a></p>
 </div>
 

@@ -28,29 +28,24 @@ include_once('include/config.php');
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li><a href="#">• Go to Rent</a></li>
-    <li><a href="#">• Homestay</a></li>
-    <li><a href="#">• Communication Bar</a></li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
     <li>• Support</li>
     <ul>
     <li><a href="notice.php" style="padding-left:7%">Notice for Rental</a></li>
     <li><a href="legalagent.php" style="padding-left:7%">Legal Agent Support</a></li>
-    <li style="padding-left:7%">Agreement Form Models</li>
-        <ul>
-            <li><a href="#rentalform" style="padding-left:15%">Agreement Form for rental</a></li>
-            <li><a href="#checkform" style="padding-left:15%">Agreement Form for checking</a></li>
-            <li><a href="#otherform" style="padding-left:15%">Agreement Form for others</a></li>
-        </ul>
+    <li><a href="legalagent.php" style="padding-left:7%">Agreement Form Models</a></li>
     <li><a href="secondhand.php" style="padding-left:7%">Second Hand Requirements</a></li>
     </ul>
-    <li><a href="#">• About Us</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
 
 
 <div class="col-9">
   <h1>Form for Rental House</h1>
-  <p><img src="Images/rental form1.gif" alt="rentalform">there need find a document</p>
+  <p><a href="RTA-entry-condition-report-form1a.pdf" target="_blank"><img src="Images/form.gif" alt="rentalform"></a></p>
   <p style="float:right;"><a href="#top"> -TOP- </a></p>
 </div>
 
