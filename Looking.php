@@ -9,6 +9,9 @@ include_once('include/config.php');
 <title>Rental House</title>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link href="css/rental.css" rel="stylesheet" type="text/css">
+<link href="css/imageresize.css" rel="stylesheet" type="text/css">
+<link href="text.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/img.css" type="text/css">
 <script src="js/nav.js"></script>
 <script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
@@ -53,9 +56,6 @@ include_once('include/config.php');
 </ol>
 <img src="images/one (1).jpg">
 <div style="clear:both;">
-
-
-
 </div> 
 
 
@@ -76,118 +76,160 @@ include_once('include/config.php');
 </div>
 <div class="feature-divider"></div>
 <section>
-<div class="oss-search-toolbar">
-<div class="container-fluid">
 <div class="row" style="padding-top: 5px; padding-left:24%;">
-<input id="budgetmin" name="budgetmin" type="hidden" value="100">
-<input id="budgetmax" name="budgetmax" type="hidden" value="500">
-<div class="form-group col-1">
-    <div>
-    $<span class="oss-slider-val" id="budgetminval">100</span> -
-    $<span class="oss-slider-val" id="budgetmaxval">500</span>
-    <span class="hidden-sm">per week</span>
-    </div>
-    <div id="budgetslider" class="oss-slider" style="popwidth:240px"></div>
-</div>
-<div class="form-group col-1" style="margin-right:18px;">
-    <div>
-    <span class="oss-slider-val" >Sort</span>
-    </div>
-<select class="form-control input-sm" id="sort" name="sort">
-
-<option value="latest">Latest</option>
-<option value="from">From</option>
-<option value="expensive">Budget High</option>
-<option value="cheapest">Budget Low</option>
+<label>
+<span>Prices :</span><select name="selection">
+<option value="Job Inquiry">100</option>
+<option value="General Question">200</option>
+<option value="Job Inquiry">300</option>
+<option value="Job Inquiry">400</option>
+<option value="Job Inquiry">500</option>
 </select>
-</div>
-<div class="form-group col-1">
-    <div>
-    <span class="oss-slider-val">Type</span>
-    </div>
-<select name="guest_type" id="guest_type" class="form-control input-sm">
-<option value="-">Any</option>
-<option value="student">Student</option>
-<option value="traveller">Traveller</option>
-<option value="worker">Worker</option>
-<option value="demi pair">Demi Pair</option>
+</label>
+<label>
+<span>Tpye :</span><select name="selection">
+<option value="Job Inquiry">Student</option>
+<option value="General Question">Traveller</option>
+<option value="Job Inquiry">Worker</option>
+<option value="Job Inquiry">Demi Pair</option>
 </select>
-</div>
-<div class="form-group col-3" style="margin-right:30px;">
-    <div>
-    <span class="oss-slider-val">Place of Study</span>
-    </div>
-<select name="placeofstudy" id="placeofstudy" class="form-control input-sm">
-<option value="-">Any</option>
-<option value="academia international">academia international</option>
-<option value="ACU">ACU</option>
-<option value="Airline academy of Australia">Airline academy of Australia</option>
-<option value="Australia Institute of Business and technology">Australia Institute of Business and technology</option>
-<option value="Australian Catholic uni">Australian Catholic uni</option>
- <option value="UQ">UQ</option>
-<option value="viva college">viva college</option>
-</select>
-</div>
-    <div class="form-group col-1" id="campus-container" style="margin-right:-25px;">
-        <div>
-        <span class="oss-slider-val">Campus</span>
-        </div>
-    <select class="form-control input-sm" id="campus" name="campus">
-    <option value="-">Any</option>
-    </select>
-    </div>
-<div class="form-group col-1">
-    <div>
-    <span class="oss-slider-val">Nationality</span>
-    </div>
-<select name="country" id="country" class="form-control input-sm">
-<option value="-">All</option>
-<option value=""></option>
-<option value="Afghanistan">China</option>
-<option value="Andorra">Japen</option>
-<option value="Argentina">Korean</option>
+</label>
+<label>
+<span>Nationality :</span><select name="selection">
+<option value="Afghanistan">Afghanistan</option>
+<option value="Andorra">Andorra</option>
+<option value="Argentina">Argentina</option>
 <option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
 <option value="Bahrain">Bahrain</option>
 <option value="Belarus">Belarus</option>
 <option value="Belgium">Belgium</option>
-
+<option value="Brazil">Brazil</option>
+<option value="Canada">Canada</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Czech Republic">Czech Republic</option>
+ <option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="Fiji">Fiji</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Guyana">Guyana</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland {Republic}">Ireland {Republic}</option>
+<option value="Italy">Italy</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Korea South">Korea South</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Laos">Laos</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Mexico">Mexico</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Myanmar, {Burma}">Myanmar, {Burma}</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Russian Federation">Russian Federation</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="South Africa">South Africa</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Thailand">Thailand</option>
+<option value="Turkey">Turkey</option>
+<option value="Uganda">Uganda</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Yemen">Yemen</option>
+<option value="Zimbabwe">Zimbabwe</option>
 </select>
+</label>
+<label>
+<span>Gender :</span><select name="selection">
+<option value="Job Inquiry">Any</option>
+<option value="General Question">Male</option>
+<option value="Job Inquiry">Female</option>
+</select>
+</label>
+<label>
+<span>Smoking :</span><select name="selection">
+<option value="Job Inquiry">Any</option>
+<option value="General Question">Yes</option>
+<option value="Job Inquiry">No</option>
+</select>
+</label>
+<label>
+<span>Drinking :</span><select name="selection">
+<option value="Job Inquiry">Any</option>
+<option value="General Question">Yes</option>
+<option value="Job Inquiry">No</option>
+</select>
+</label>
+<label>
+<span>Distance :</span><select name="selection">
+<option value="Job Inquiry">1km</option>
+<option value="General Question">2km</option>
+<option value="Job Inquiry">3km</option>
+<option value="Job Inquiry">4km</option>
+<option value="Job Inquiry">5km</option>
+</select>
+</label>
+<label>
+<span>&nbsp;</span>
+<input type="button" class="button" value="Send" />
+</label>
 </div>
-    <div class="form-group col-1">
-        <div>
-        <span class="oss-slider-val">Gender</span>
-        </div>
-    <select class="form-control input-sm" id="gender" name="gender">
-    <option value="-">Any</option>
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-    </select>
-    </div>
-    <div class="form-group col-1">
-        <div>
-        <span class="oss-slider-val">Smoking</span>
-        </div>
-    <select class="form-control input-sm" id="smoking" name="smoking">
-    <option value="-">Any</option>
-    <option value="yes">Yes</option>
-    <option value="no">No</option>
-    </select>
-    </div>
-    </div>
-    </div>
-    </div>
+</form>
+<br>
+<br>
+<br>
+
+
     </section>
     <div style="padding-left:26%;"> 
-    <img src="images/1.jpg" >
-    <img src="images/2.jpg">
-    <img src="images/3.jpg">
-    <img src="images/4.jpg">
-    <img src="images/5.jpg">
-    <img src="images/6.jpg">
-    <img src="images/7.jpeg">
+    <img class="pic1" src="Images/1.jpeg" alt="HannabyStreet" style="  float:left; ">
+	<img class="picbig1" src="Images/1.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/2.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/2.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/3.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/3.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/4.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/4.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/5.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/5.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/6.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/6.jpeg" alt="HannabyStreet" style="  float:left;">
+    <img class="pic1" src="Images/7.jpeg" alt="HannabyStreet" style="  float:left; padding-left:6px;">
+	<img class="picbig1" src="Images/7.jpeg" alt="HannabyStreet" style="  float:left;">
+   
     </div>
+    <br><br><br><br>
+    
     <div style="padding-left:24%;"> 
-    <h1>Hot choices</h1>
+    <br><br><br><br><br><h1>Hot choices</h1>
     <p><h2>Desciption:</h2>After experiencing this super-convenient home, nothing else will satisfy you. <span style="display:none;" id="expand-text">
   A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
 But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.

@@ -64,9 +64,9 @@ include_once('include/config.php');
   </ul>
 </div>
 
-<div class="col-9">
-<div class="member_frm">
-<h2>Sign up now!</h2>
+<div class="col-9" >
+<div class="member_frm" style="margin-left:20%;">
+<h2 style="margin-left:13%;">Sign up now!</h2>
 <p><i>Fields marked with an asterisk (*) must be entered.</i></p>
 <form action="member_process.php" method="post">
 	<div class="row">
@@ -126,8 +126,9 @@ include_once('include/config.php');
 <div class="row" id="footer">
     <div class="col-s-12 col-12" id="footer-col1"></div>
 </div>
-  <h2>Sign in now!</h2>
-<div class="member_frm">
+ 
+<div class="member_frm " style="margin-left:20%;">
+<h2 style="margin-left:13%;">Sign in now!</h2>
 <p>Please enter your email and password</p>
 <form action="login.php" method="post">
     <div class="row">
