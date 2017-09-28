@@ -1,6 +1,32 @@
 <?php
 session_start();
 include_once('include/config.php');
+	if (isset($_SESSION['valid_user'])) {
+		header("location: member_only.php");
+	}
+	
+	//make the database connection
+	$conn  = db_connect();
+	     
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      $email = $conn -> real_escape_string($_POST['email']);
+      $password = $conn -> real_escape_string($_POST['password']); 
+     	  
+	  //make a query to check if user login successfully
+	  $sql = "select * from users where email='$email' and password='$password'";
+	  $result = $conn -> query($sql);
+	  $numOfRows = $result -> num_rows;
+	  $row = $result -> fetch_assoc();
+	  if ($numOfRows == 1) {
+         $_SESSION['valid_user'] = $email;
+		 $_SESSION['name'] = $row['name'];         
+         header("location: member_only.php");
+      }else {
+		  $error = 'Your Login Name or Password is invalid';
+      }
+   }
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +37,7 @@ include_once('include/config.php');
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
+<script src="js/member.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
 <?php include("include/nav.inc")?>
 
@@ -38,74 +65,111 @@ include_once('include/config.php');
 </div>
 
 <div class="col-9">
-<h1>Haven't got an account?</h1>
-<form action="" method="post">
-	<table border="0">
-   <tr>
-	<td align="right">* Name:</td>
-    <td><input type="text" id="name" name="name"> </td>
-    <td id ="name_msg" style="color:red;"><br></td>"
-   </tr>
-   <tr>
-     <td align="right">* Password:</td>
-     <td><input type="Password" id="password" name="password" onChange="checkName(document)"  ></td>
-     <td id="pwd_msg" style="color:red;"></td>
-    </tr>
-   <tr>
-    <td align="right">* Re-try:</td>
-    <td><input type="password" id="rePassword" name="rePassword" onChange="chenckRePassword(document)"></td>
-    </tr>
-    
-    <tr>
-    <td align="right"><input type="submit" name="submit" value="Submit"></td>
-    <td><input type="reset" name="reset" value="Clear"></td>
-    </tr>
-    </table>
-    </form>
-  <h1>Already have an account?</h1><form action="" method="post">
-	<table border="0">
-   <tr>
-	<td align="right">* Name:</td>
-    <td><input type="text" id="name" name="name"> </td>
-    <td id ="name_msg" style="color:red;"><br></td>"
-   </tr>
-   <tr>
-     <td align="right">* Password:</td>
-     <td><input type="Password" id="password" name="password" onChange="checkName(document)"  ></td>
-     </tr><td align="right"><input type="submit" name="submit" value="Submit"></td>
-    <td><input type="reset" name="reset" value="Clear"></td>
-     </tr>
-     </table>
-     </form>
-     
-     <form action="" method="post" class="STYLE-NAME">
-<h1>Wanna leave a comment?</h1></tr>
-<label></tr>
-<span>User Name :</span>
-<input id="name" type="text" name="name" placeholder="Your Full Name" />
-</label>
-<label>
-<span>Password :</span>
-<input id="email" type="email" name="email" placeholder="enter your password" />
-</label>
-<label></tr>
-<span>Message :</span>
-<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
-</label>
-<label>
-<span>Subject :</span><select name="selection">
-<option value="Job Inquiry">Rent</option>
-<option value="General Question">Homestay</option>
-<option value="Job Inquiry">Communication Bar</option>
-<option value="Job Inquiry">Support</option>
-<option value="Job Inquiry">About us</option>
-</select>
-</label>
-<label>
-<span>&nbsp;</span>
-<input type="button" class="button" value="Send" />
-</label>
+<div class="member_frm">
+<h2>Sign up now!</h2>
+<p><i>Fields marked with an asterisk (*) must be entered.</i></p>
+<form action="member_process.php" method="post">
+	<div class="row">
+		<div class="col-s-12 col-12">
+        	<label for="name">* Name:</label>
+            <input type="text" id="name" name="name" size="30" maxlength="50"
+            	onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" required />
+        </div>
+	</div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="email">* Email:</label>
+            <input type="email" id="email" name="email" size="30" maxlength="50"
+                onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" required />
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="password">* Password:</label>
+            <input type="password" id="password" name="password" size="20" maxlength="20"
+                onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" required />
+            <span id="pwd_msg" class="error_msg"></span>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="rePassword">* Re-try:</label>
+            <input type="password" id="rePassword" size="20" maxlength="20"
+                onChange="checkRePassword(document)"
+                onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" />
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="zip">* Postcode:</label>
+            <input type="text" id="zip" size="10" maxlength="10" placeholder="4 digits"
+                onChange="checkZIPCode(document)"
+                onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" />
+            <span class="error_msg" id="zip_msg"></span>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label>&nbsp;</label>
+            <input type="submit" id="submit" value="Submit" 
+            	onClick="return validateInfo(document)" />
+            <input type="reset" id="reset" value="Clear Form" onClick="reset_frm(document)" />
+        </div>
+    </div>            
 </form>
+</div>
+<div class="row" id="footer">
+    <div class="col-s-12 col-12" id="footer-col1"></div>
+</div>
+  <h2>Sign in now!</h2>
+<div class="member_frm">
+<p>Please enter your email and password</p>
+<form action="login.php" method="post">
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="35" maxlength="50" 
+            	onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" required />
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label for="password">Password:</label>
+            <input type="password" id="password" name="password" size="20" maxlength="20" 
+            	onBlur="changeColor(id, 'white')"
+                onFocus="changeColor(id, 'seaShell')" required />
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-s-12 col-12">
+        	<label>&nbsp;</label>
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset" id="reset" value="Clear" />
+        </div>
+    </div>
+    <?php 
+	if(isset($error)) {
+		echo "<p style=\"color: red;\">$error</p>";
+		unset($error);
+	}
+?>
+            
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+     
+  
+
   
   
 <div class="footer">

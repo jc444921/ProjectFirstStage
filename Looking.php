@@ -10,6 +10,7 @@ include_once('include/config.php');
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
+<script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
 <?php include("include/nav.inc")?>
 </head>
@@ -50,7 +51,7 @@ include_once('include/config.php');
   <li>No commission</li>
   <li>You search & find your ideal accommodation</li>
 </ol>
-<img src="image/one (1).jpg">
+<img src="images/one (1).jpg">
 <div style="clear:both;">
 
 
@@ -68,7 +69,7 @@ include_once('include/config.php');
   <li>No commission</li>
   <li>You choose perfect guest rather than agency making choice</li>
 </ol>
-<img src="image/one.jpg">
+<img src="images/one.jpg">
 <p><b class="smalltitle" id="bonds"></b>
 </p>
 </div>
@@ -177,26 +178,25 @@ include_once('include/config.php');
     </div>
     </section>
     <div style="padding-left:26%;"> 
-    <img src="image/1.jpg" >
-    <img src="image/2.jpg">
-    <img src="image/3.jpg">
-    <img src="image/4.jpg">
-    <img src="image/5.jpg">
-    <img src="image/6.jpg">
-    <img src="image/7.jpeg">
+    <img src="images/1.jpg" >
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+    <img src="images/6.jpg">
+    <img src="images/7.jpeg">
     </div>
-    <div style="padding-left:26%;"> 
-    <p>Calling all busy folk! After experiencing this super-convenient home, nothing else will satisfy you. 
-  <br>A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
-<br>But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
-<br>And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
-<br>With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.
-  <img src="image/11.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br>
+    <div style="padding-left:24%;"> 
+    <h1>Hot choices</h1>
+    <p><h2>Desciption:</h2>After experiencing this super-convenient home, nothing else will satisfy you. <span style="display:none;" id="expand-text">
+  A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
+But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
+And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
+With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.</span> <a id="expand-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand-click','expand-text','inline')"> Read more</a></p>
+  <img src="images/11.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br>
 <br>General Features
 <br>Property Type:Villa
-<br>Bedrooms:3
-<br>Bathrooms:1
-<br>Bond:$1,400
+<br>Bond:$2,400
 <br>Indoor Features
 <br>Built-in Wardrobes
 <br>Air Conditioning
@@ -207,13 +207,13 @@ include_once('include/config.php');
 <br>Floorplans & Interactive Tours
 </p>
 </div>
-<div style="padding-left:26%;"> 
-    <p>Calling all busy folk! After experiencing this super-convenient home, nothing else will satisfy you. 
+<div style="padding-left:24%;"><br><br><br><br><br><br><br><br><br><br><br>
+    <p><h2>Desciption:</h2>nothing else will satisfy you. it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.<span style="display:none;" id="expand1-text">
   <br>A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
-<br>But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
-<br>And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
-<br>With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.
-  <img src="image/22.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br>
+But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
+And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
+With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.</span> <a id="expand1-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand1-click','expand1-text','inline')"> Read more</a></p>
+  <img src="images/22.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br>
 <br>General Features
 <br>Property Type:Villa
 <br>Bedrooms:3
@@ -221,6 +221,22 @@ include_once('include/config.php');
 <br>Bond:$1,400
 <br>Indoor Features
 <br>Built-in Wardrobes
+<br>Shed
+<br>Fully Fenced
+<br>Floorplans & Interactive Tours
+</p>
+</div>
+ <div style="padding-left:24%;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+    <p><h2>Desciption:</h2> 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.<span style="display:none;" id="expand2-text">
+But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
+And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
+With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.</span> <a id="expand2-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand2-click','expand2-text','inline')"> Read more</a></p>
+  <img src="images/33.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br><br><br><br>
+<br>General Features
+<br>Property Type:Villa
+<br>Bedrooms:3
+<br>Bathrooms:1
+<br>Bond:$1,400
 <br>Air Conditioning
 <br>Outdoor Features
 <br>Carport Spaces:1
@@ -229,28 +245,11 @@ include_once('include/config.php');
 <br>Floorplans & Interactive Tours
 </p>
 </div>
- <div style="padding-left:26%;"> 
-    <p>Calling all busy folk! After experiencing this super-convenient home, nothing else will satisfy you. 
-  <br>A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
-<br>But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
-<br>And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
-<br>With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.
-  <img src="image/33.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br>
-<br>General Features
-<br>Property Type:Villa
-<br>Bedrooms:3
-<br>Bathrooms:1
-<br>Bond:$1,400
-<br>Indoor Features
-<br>Built-in Wardrobes
-<br>Air Conditioning
-<br>Outdoor Features
-<br>Carport Spaces:1
-<br>Shed
-<br>Fully Fenced
-<br>Floorplans & Interactive Tours
-</p>
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

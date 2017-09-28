@@ -11,6 +11,7 @@ include_once('include/config.php');
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
+<script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
 <?php include("include/nav.inc")?>
 
