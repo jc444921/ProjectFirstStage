@@ -6,84 +6,15 @@ include_once('config.php');
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-.header {
-    background-color:#1676BC;
-    color:white;
-    padding: 2px 0 12px 0 ;
-}
-.header img {
-	margin-top:-2px;
-	margin-right:3em;
-	float:left;
-	width: 15%;
-	height: 12%;
-}
-.header h2 {
-	clear:both;
-	margin-top: 3px;
-}
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.menu li:hover {
-    background-color: #0099cc;
-}
-.aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.smalltitle {
-	font-size: 150%;
-	color:#0C22CD;
-}
-.footer {
-    background-color: #1676BC;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
-</style>
+<title>Rental House</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 <link href="rental.css" rel="stylesheet" type="text/css">
-<script>
-	function run_first() {
-		var id_var = sessionStorage.li_id;
-		if(id_var) {
-			document.getElementById(id_var).style.backgroundColor = "gray";
-		}
-	}
-	
-	function nav_item_selected(li_id) {	
-		for(i = 0; i < 6; i++) {
-			document.getElementById(i.toString()).style.backgroundColor = "";
-		}
-		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
-		
-		//store li_id in sessionStorage
-		sessionStorage.li_id = li_id.toString();		
-	}
-	
-</script>
-
-<?php include("nav.inc");?>
+<link href="text.css" rel="stylesheet" type="text/css">
+<link href="imageresize.css" rel="stylesheet" type="text/css">
+<script src="js/nav.js"></script>
+<script src="js/show_text.js"></script>
+<link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
+<?php include("include/nav.inc")?>
 </head>
 <body>
 
