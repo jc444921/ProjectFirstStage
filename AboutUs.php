@@ -52,7 +52,7 @@ Level 11, 349 Queen Street Brisbane QLD 4000 AUSTRALIA
 
     <p style="float:right;"><a href="#top"> -TOP- </a></p>
     </p>
-
+<br>Follow us on <a href="https://www.facebook.com/pg/Rental-House-376641079422439/posts/?ref=page_internal"><img src="Facebook.png" alt="facebook" style="width:8%; height:8%;"></a> <a href="https://www.instagram.com/team_0217/"><img src="instagram.png" alt="instagram" style="width:8%; height:8%;"></a>
 </div>
 </div>
 <div class="footer">
