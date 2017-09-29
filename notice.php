@@ -6,13 +6,15 @@
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/readmore.js"></script>
 <script src="js/nav.js"></script>
-<?php include ("include/nav.inc");?>
+
 </head>
 <body>
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to Notice Page!</b></h2>

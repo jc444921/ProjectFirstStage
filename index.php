@@ -100,7 +100,7 @@ include_once('include/config.php');
   </a>
   </p>
   
-    <p style="float:right;"><a href="#top"> -TOP- </a></p>
+    <br><br><br><br><p style="float:right;"><a href="#top"> -TOP- </a></p>
 </div>
 
 <div class="col-3 col-s-12">

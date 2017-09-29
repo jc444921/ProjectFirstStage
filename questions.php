@@ -12,7 +12,7 @@ include_once('include/config.php');
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
+
 
 
 </head>
@@ -20,7 +20,9 @@ include_once('include/config.php');
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to Q and A!</b></h2>
@@ -29,29 +31,21 @@ include_once('include/config.php');
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li><a href="#">• Go to Rent</a></li>
-    <li><a href="#">• Homestay</a></li>
-    <li><a href="#">• Communication Bar</a></li>
-    <li>• Support</li>
-    <ul>
-        <li style="padding-left:7%">Notices for you:</li>
-        <ul>
-            <li><a href="#increase" style="padding-left:15%">Rental increase</a></li>
-            <li><a href="#repairs" style="padding-left:15%">Rights to repairs</a></li>
-            <li><a href="#bonds" style="padding-left:15%">Getting your bond back</a></li>
-            <li style="padding-left:15%">More info please check <a href="https://www.choice.com.au/money/property/renting/articles/rental-rights-you-didnt-know-you-had"><b>www.choice.com.au</b></a></li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
+    	<ul>
+        	<li><a href="#qs" style="padding-left:15%">General Questions</a></li>
+            <li><a href="#comment" style="padding-left:15%">Wanna leave a comment?</a></li>
         </ul>
-        <li><a href="legalagent.html" style="padding-left:7%">Legal Agent Support</a></li>
-        <li><a href="agreement.html" style="padding-left:7%">Agreement Form Models</a></li>
-        <li><a href="secondhand.html" style="padding-left:7%">Second Hand Requirements</a></li>
-    </ul>
-    <li><a href="#">• About Us</a></li>
+    <li><a href="notice.php">• Support</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
 
 <div class="col-9">
 
-  <p><h2 class="smalltitle" id="increase">General Questions</h2></p>
+  <p><h2 class="smalltitle" id="qs">General Questions</h2></p>
 <div class="col-s-12 col-12" id="homestay-content">
 <p><strong>Who sets the homestay host fees?:</strong> 
 </p>
@@ -92,7 +86,7 @@ Follow the steps to upgrade.  </li>
 Locate the host you are interested in. There will be a contact form in the page.  </li>
 </ul>
  <form action="" method="post" class="STYLE-NAME">
-<h1>Wanna leave a comment?</h1></tr>
+<h1 id="comment">Wanna leave a comment?</h1></tr>
 <label></tr>
 <span>User Name :</span>
 <input id="name" type="text" name="name" placeholder="Your Full Name" />

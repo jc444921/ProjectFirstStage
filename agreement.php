@@ -12,14 +12,16 @@ include_once('include/config.php');
 <link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include ("include/nav.inc");?>
+
 
 </head>
 <body>
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%">Welcome to see some<strong>Agreement Models</strong>.</h2>
@@ -35,7 +37,7 @@ include_once('include/config.php');
     <ul>
     <li><a href="notice.php" style="padding-left:7%">Notice for Rental</a></li>
     <li><a href="legalagent.php" style="padding-left:7%">Legal Agent Support</a></li>
-    <li><a href="legalagent.php" style="padding-left:7%">Agreement Form Models</a></li>
+    <li style="padding-left:7%">Agreement Form Models</a></li>
     <li><a href="secondhand.php" style="padding-left:7%">Second Hand Requirements</a></li>
     </ul>
     <li><a href="AboutUs.php">• About Us</a></li>

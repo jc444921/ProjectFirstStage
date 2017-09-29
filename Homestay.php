@@ -13,7 +13,7 @@ include_once('include/config.php');
 <script src="js/nav.js"></script>
 <script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
+
 
 
 </head>
@@ -21,7 +21,9 @@ include_once('include/config.php');
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to Homestay!</b></h2>
@@ -30,37 +32,30 @@ include_once('include/config.php');
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li><a href="#">• Go to Rent</a></li>
-    <li><a href="#">• Homestay</a></li>
-    <li><a href="#">• Communication Bar</a></li>
-    <li>• Support</li>
-    <ul>
-        <li style="padding-left:7%">Notices for you:</li>
-        <ul>
-            <li><a href="#increase" style="padding-left:15%">Rental increase</a></li>
-            <li><a href="#repairs" style="padding-left:15%">Rights to repairs</a></li>
-            <li><a href="#bonds" style="padding-left:15%">Getting your bond back</a></li>
-            <li style="padding-left:15%">More info please check <a href="https://www.choice.com.au/money/property/renting/articles/rental-rights-you-didnt-know-you-had"><b>www.choice.com.au</b></a></li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
+    	<ul>
+        	<li><a href="#whatishomestay" style="padding-left:15%">What is Homestay?</a></li>
+            <li><a href="#whychoose" style="padding-left:15%">Why choose?</a></li>
+            <li><a href="#bonds" style="padding-left:15%">Townhouse</a></li>
         </ul>
-        <li><a href="legalagent.html" style="padding-left:7%">Legal Agent Support</a></li>
-        <li><a href="agreement.html" style="padding-left:7%">Agreement Form Models</a></li>
-        <li><a href="secondhand.html" style="padding-left:7%">Second Hand Requirements</a></li>
-    </ul>
-    <li><a href="#">• About Us</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
+    <li><a href="notice.php">• Support</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
 
 <div class="col-9">
 
-  <p><b class="smalltitle" id="increase">What is Homestay?</b>
+  <p><b class="smalltitle" id="whatishomestay">What is Homestay?</b>
 <br>
 <div class="col-s-12 col-12" id="homestay-content">
 <p>Homestay is a popular form of hospitality and lodging whereby visitors stay in a house or apartment of a local of the city to which they are traveling. <span style="display:none;" id="expand-text">your rent generally can't be increased unless it's been written into your tenancy agreement.The length of stay can vary from one night to even a year and can be free.in exchange for monetary compensation, in exchange for a stay at the guest's property either simultaneously or at another time (home exchange), or in exchange for help on the host's property.</span> <a id="expand-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand-click','expand-text','inline')"> Read more</a></p>
-<img src="Images/rental increase.gif" alt="increase">
+<img src="Images/rental increase.gif" alt="whatishomestay">
 </div>
 </p>
 
-    <p><b class="smalltitle" id="repairs">Why choose our Homestay?</b>
+    <p><b class="smalltitle" id="whychoose">Why choose our Homestay?</b>
     <p>
     Our site select the best homes of Australia’s best Universities,we have partnered with these providers to offer premium homestay options which are affordable and suited to your needs.<span style="display:none;" id="expand-text1">
     Our dedicated team have over a decade of involvement in homestay and are always here to provide advice and to support you during your homestay. We want to ensure you benefit from your homestay experience and that you enjoy your time living in this beautiful city. 

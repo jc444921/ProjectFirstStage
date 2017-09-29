@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('include/config.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,19 +8,18 @@ include_once('config.php');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rental House</title>
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<link href="rental.css" rel="stylesheet" type="text/css">
-<link href="text.css" rel="stylesheet" type="text/css">
-<link href="imageresize.css" rel="stylesheet" type="text/css">
+<link href="css/rental.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
-<script src="js/show_text.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
+
 </head>
 <body>
 
 <div class="header">
-<img src="LOGO for team 2.png" alt="logo">
+<img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to Achievements Page!</b></h2>
@@ -46,7 +45,7 @@ include_once('config.php');
 <div class="col-9">
   <h1>Rate My Agency 2017</h1>
   <p style="clear:both;">
-  <img src="ratemyagent.jpg" alt="ratemyagent" style="width:24%; height:50%;">
+  <img src="Images/ratemyagent.jpg" alt="ratemyagent" style="width:24%; height:50%;">
   </p>
   <br> AGENCY OF THE MONTH
   <p>The awards, which are the largest real estate awards in Australia, recognise those agents and agencies that have ranked the highest based on customer reviews and feedback.  
@@ -75,7 +74,7 @@ include_once('config.php');
 <br>Supplier of the Year
 <br>Best New Product<br>
 <br><h2>Best Exhibition Stand</h2>
-  <img src="Hire Industry Excellence Awards Logo 2 (1).png" alt="hire industry excellence" style="width:30%; height:25%; float:left; padding: 2% 2%;"><br>
+  <img src="Images/Hire Industry Excellence Awards Logo 2 (1).png" alt="hire industry excellence" style="width:30%; height:25%; float:left; padding: 2% 2%;"><br>
 <p>The winner of the Rental Company of the Year will receive:
 <br>A full delegate registration to the next Convention
 <br>Three night’s accommodation for two (double or twin share)

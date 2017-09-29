@@ -15,13 +15,15 @@ include_once('include/config.php');
 <script src="js/nav.js"></script>
 <script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
+
 </head>
 <body>
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to Notice Page!</b></h2>
@@ -30,20 +32,18 @@ include_once('include/config.php');
 
 <div class="col-3 col-s-12 menu">
   <ul>
-  	<li style="padding-left:7%">• Go to Rent</li>
+  	<li><a href="apartment.php">• Go to Rent</a></li>
+    <li><a href="Homestay.php">• Homestay</a></li>
     	<ul>
-        	<li><a href="apartment.html" style="padding-left:15%">Apartment and Unit</a></li>
-            <li><a href="house.html" style="padding-left:15%">House</a></li>
-            <li><a href="townhouse.php" style="padding-left:15%">Townhouse</a></li>
-            <li><a href="villa.php" style="padding-left:15%">Villa</a></li>
+        	<li><a href="#family" style="padding-left:15%">Find a family</a></li>
+            <li><a href="#hot" style="padding-left:15%">Hot Choice</a></li>
         </ul>
-    <li><a href="#">• Homestay</a></li>
-    <li><a href="#">• Communication Bar</a></li>
-    <li><a href="notice.html">• Support</a></li>
-    <li><a href="#">• About Us</a></li>
+    <li><a href="CommunicationBar.php">• Communication Bar</a></li>
+    <li><a href="notice.php">• Support</a></li>
+    <li><a href="AboutUs.php">• About Us</a></li>
   </ul>
 </div>
-<h1>Want to find a family in here? click to get it!</h1>
+<h1 id="family">Want to find a family in here? click to get it!</h1>
 <div class="col-4">
   
   <h2>Good for students</h2>
@@ -226,12 +226,10 @@ include_once('include/config.php');
 	<img class="picbig1" src="Images/7.jpeg" alt="HannabyStreet" style="  float:left;">
    
     </div>
-   
-   <div class="row">
+    <br><br><br><br>
     
-    <div style="padding-left:24%;"> 
-    <div class="col-12">
-     <h1>Hot choices</h1>
+    <div style="padding-left:24%;" id="hot"> 
+    <br><br><br><br><br><h1>Hot choices</h1>
     <p><h2>Desciption:</h2>After experiencing this super-convenient home, nothing else will satisfy you. <span style="display:none;" id="expand-text">
   A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
 But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
@@ -250,13 +248,8 @@ With such a wide range of features, this home will be snapped up very quickly. D
 <br>Fully Fenced
 <br>Floorplans & Interactive Tours
 </p>
-
 </div>
-</div>
-
-
-<div style="padding-left:24%;">
-<div class="col-12">
+<div style="padding-left:24%;"><br><br><br><br><br><br><br><br><br><br><br>
     <p><h2>Desciption:</h2>nothing else will satisfy you. it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.<span style="display:none;" id="expand1-text">
   <br>A 3 bedroom, 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.
 But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
@@ -273,16 +266,13 @@ With such a wide range of features, this home will be snapped up very quickly. D
 <br>Shed
 <br>Fully Fenced
 <br>Floorplans & Interactive Tours
-
+</p>
 </div>
-</div>
-
- <div style="padding-left:24%;">
-<div class="col-12">
+ <div style="padding-left:24%;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
     <p><h2>Desciption:</h2> 1 bathroom, 1 toilet, single-storey, dwelling, it's situated in the heart of Maylands, City views and close to Peninsula Golf Course.<span style="display:none;" id="expand2-text">
 But its position is only part of what this property's all about... A home can be central to everything, but that's not enough; it also has to have the right feeling about it. One look and you'll find it hard to disagree - this home does.
 And you haven't even taken in its features yet: Single carport, wall unit aircon, timber decked verandah, and 2 rooms with robes. Not to mention its gas cooking, shed, and storage room. Plus you'll particularly like its easy care gardens, undercover patio, enticing cityscape views, and rear villa. Sorry no pets allowed.
-<br>With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.</span> <a id="expand2-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand2-click','expand2-text','inline')"> Read more</a>
+With such a wide range of features, this home will be snapped up very quickly. Don't miss this opportunity. Call 08 9378 2555 now to arrange an inspection.</span> <a id="expand2-click" href="javacript:;" style="text-decoration:none;" onClick="show_text('expand2-click','expand2-text','inline')"> Read more</a></p>
   <img src="images/33.jpeg" alt="villa2-1" style="width:45%; height:40%; float:left; padding: 2% 2%;"><br><br><br><br><br><br>
 <br>General Features
 <br>Property Type:Villa
@@ -295,11 +285,21 @@ And you haven't even taken in its features yet: Single carport, wall unit aircon
 <br>Shed
 <br>Fully Fenced
 <br>Floorplans & Interactive Tours
-
 </p>
 </div>
-</div>
-    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    
     
  <p style="float:right;"><a href="#top"> -TOP- </a></p>
 

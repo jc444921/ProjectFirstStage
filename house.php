@@ -7,23 +7,26 @@ include_once('include/config.php');
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rental House</title>
+	<title>Rental House</title>
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<link href="rental.css" rel="stylesheet" type="text/css">
-<link href="text.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+<link href="css/rental.css" rel="stylesheet" type="text/css">
 <link href="imageresize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/img2.css" type="text/css">
+<link href="text.css" rel="stylesheet" type="text/css">
 <script src="js/nav.js"></script>
-<script src="js/show_text.js"></script>
+<script src="js/display.js"></script>
 <link rel="stylesheet" href="css/nav_responsive.css" type="text/css">
-<?php include("include/nav.inc")?>
-
 
 </head>
+
 <body>
 
 <div class="header">
 <img src="Images/LOGO for team 2.png" alt="logo">
+    <p>
   <h1 style="font-size:250%" id="top">Rental House</h1>
+	<?php include("include/nav.inc")?></p>
 </div>
 
     <h2 style="font-size: 190%"><b>Welcome to House Page!</b></h2>
